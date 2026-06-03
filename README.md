@@ -1,16 +1,20 @@
-# helado.github.io
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guaba Ice</title>
+  <title>Codesweed</title>
   <style>
     *{
       margin:0;
       padding:0;
       box-sizing:border-box;
       font-family:Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body{
@@ -55,6 +59,8 @@
       font-weight:bold;
       cursor:pointer;
       transition:0.3s;
+      text-decoration: none;
+      display: inline-block;
     }
 
     .btn:hover{
@@ -96,7 +102,7 @@
 
     .card img{
       width:100%;
-      height:250px;
+      height:380px;
       object-fit:cover;
     }
 
@@ -120,8 +126,8 @@
     .pedido{
       background:white;
       margin:40px auto;
-      width:90%;
-      max-width:800px;
+      width:95%;
+      max-width:1000px;
       padding:40px;
       border-radius:40px;
       box-shadow:0 10px 25px rgba(0,0,0,0.2);
@@ -135,17 +141,60 @@
       margin-bottom:30px;
     }
 
+    .opciones-pedido {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .columna-pedido {
+      flex: 1;
+      min-width: 280px;
+      background: #fefce8;
+      padding: 25px;
+      border-radius: 30px;
+      border: 2px dashed #84cc16;
+    }
+
+    .columna-pedido h3 {
+      text-align: center;
+      color: #15803d;
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .columna-pedido .subprecio {
+      text-align: center;
+      color: #65a30d;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
     form{
       display:flex;
       flex-direction:column;
-      gap:20px;
+      gap:15px;
     }
 
     input, select, textarea{
       padding:15px;
       border-radius:20px;
       border:2px solid #bef264;
-      font-size:18px;
+      font-size:16px;
+      background: white;
+      width: 100%;
+    }
+
+    .columna-pedido .btn {
+      background: #15803d;
+      color: white;
+      width: 100%;
+      text-align: center;
+    }
+
+    .columna-pedido .btn:hover {
+      background: #166534;
     }
 
     .beneficios{
@@ -193,70 +242,124 @@
 <body>
 
 <header>
-  <h1>🍦 Guaba Ice 🍦</h1>
-  <p>✨ El auténtico sabor tropical de la guaba ✨</p>
-  <button class="btn">✨ Ordenar Ahora ✨</button>
+  <h1>🍦 Codesweed 🍦</h1>
+  <p>✨ El auténtico sabor tropical de la guaba y más frutas exóticas ✨</p>
+  <a href="#seccion-helados" class="btn">✨ Ordenar Ahora ✨</a>
 </header>
 
-<section class="titulo">
+<section class="titulo" id="seccion-helados">
   <h2>Nuestros Helados Especiales</h2>
-  <p>Disfruta nuestros deliciosos helados artesanales elaborados con guaba natural.</p>
+  <p>Disfruta nuestros deliciosos helados artesanales elaborados con fruta natural.</p>
 </section>
 
 <section class="productos">
 
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?q=80&w=800&auto=format&fit=crop">
+    <img src="imagenes/images4gu.png" alt="Helado de Guaba">
     <div class="card-content">
-      <h3>Helado Cremoso de Guaba</h3>
+      <h3>Helado de Guaba</h3>
       <div class="precio">$1.00</div>
-      <button class="btn">🍦 Comprar Ahora 🍦</button>
+      <a href="#seccion-pedido" class="btn">🍦 Comprar Ahora 🍦</a>
     </div>
   </div>
 
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1516559828984-fb3b99548b21?q=80&w=800&auto=format&fit=crop">
+    <img src="imagenes/heladog.png" alt="Helado de Achotillo">
+    <div class="card-content">
+      <h3>Helado de Achotillo</h3>
+      <div class="precio">$1.00</div>
+      <a href="#seccion-pedido" class="btn">🍦 Comprar Ahora 🍦</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="imagenes/mango.jpg" alt="Paleta de Mango">
+    <div class="card-content">
+      <h3>Paleta de Mango</h3>
+      <div class="precio">$1.00</div>
+      <a href="#seccion-pedido" class="btn">🍦 Comprar Ahora 🍦</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="imagenes/Paletag.png" alt="Paleta de Guaba">
     <div class="card-content">
       <h3>Paleta de Guaba</h3>
       <div class="precio">$1.00</div>
-      <button class="btn">🍦 Comprar Ahora 🍦</button>
+      <a href="#seccion-pedido" class="btn">🍦 Comprar Ahora 🍦</a>
     </div>
   </div>
 
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?q=80&w=800&auto=format&fit=crop">
+    <img src="imagenes/paletagg.png" alt="Paleta de Achotillo">
     <div class="card-content">
-      <h3>Especial Guaba</h3>
-      <div class="precio">$2.00</div>
-      <button class="btn">🍦 Comprar Ahora 🍦</button>
+      <h3>Paleta de Achotillo</h3>
+      <div class="precio">$1.00</div>
+      <a href="#seccion-pedido" class="btn">🍦 Comprar Ahora 🍦</a>
     </div>
   </div>
 
 </section>
 
-<section class="pedido">
+<section class="pedido" id="seccion-pedido">
   <h2>🍨 Haz tu Pedido 🍨</h2>
 
-  <form>
-    <input type="text" placeholder="Tu nombre">
-    <input type="text" placeholder="Dirección de entrega">
-    <input type="tel" placeholder="Número de teléfono">
+  <div class="opciones-pedido">
+    
+    <div class="columna-pedido">
+      <h3>🛒 Pedido por Unidad</h3>
+      <div class="subprecio">Precio regular: $1.00 c/u</div>
+      
+      <form>
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="text" placeholder="Dirección de entrega" required>
+        <input type="tel" placeholder="Número de teléfono" required>
 
-    <select>
-      <option>Selecciona tu helado</option>
-      <option>Helado Cremoso de Guaba</option>
-      <option>Paleta de Guaba</option>
-      <option>Especial Guaba</option>
-    </select>
+        <select required>
+          <option value="">Selecciona tu helado</option>
+          <option>Helado de Guaba</option>
+          <option>Helado de Achotillo</option>
+          <option>Paleta de Mango</option>
+          <option>Paleta de Guaba</option>
+          <option>Paleta de Achotillo</option>
+        </select>
 
-    <textarea rows="4" placeholder="Escribe aquí tu pedido"></textarea>
+        <textarea rows="3" placeholder="Detalles adicionales de tu pedido..."></textarea>
+        <button type="submit" class="btn">✨ Enviar Pedido por Unidad ✨</button>
+      </form>
+    </div>
 
-    <button class="btn">✨ 🍦 Enviar Pedido 🍦 ✨</button>
-  </form>
+    <div class="columna-pedido">
+      <h3>📦 Pedido al por Mayor</h3>
+      <div class="subprecio">Precio distribuidor: $0.90 c/u (Mín. 25 unidades)</div>
+      
+      <form>
+        <input type="text" placeholder="Nombre de tu negocio o persona" required>
+        <input type="text" placeholder="Dirección de entrega" required>
+        <input type="tel" placeholder="Número de teléfono" required>
+
+        <select required>
+          <option value="">¿Qué sabor deseas al por mayor?</option>
+          <option>Sabor Surtido (Variados)</option>
+          <option>Helado de Guaba</option>
+          <option>Helado de Achotillo</option>
+          <option>Paleta de Mango</option>
+          <option>Paleta de Guaba</option>
+          <option>Paleta de Achotillo</option>
+        </select>
+
+        <input type="number" min="25" placeholder="Cantidad de helados (Mínimo 25)" required>
+
+        <textarea rows="2" placeholder="Instrucciones específicas para el empaque mayorista..."></textarea>
+        <button type="submit" class="btn" style="background:#84cc16;">✨ Solicitar al por Mayor ✨</button>
+      </form>
+    </div>
+
+  </div>
 </section>
 
 <section class="beneficios">
-  <h2>🌿 ¿Por qué elegir Guaba Ice? 🌿</h2>
+  <h2>🌿 ¿Por qué elegir Codesweed? 🌿</h2>
 
   <div class="benefit-container">
     <div class="benefit">
@@ -276,36 +379,11 @@
   </div>
 </section>
 
-<section class="beneficios">
-  <h2>📲 Comparte Nuestra Tienda 📲</h2>
-
-  <div class="benefit-container">
-    <div class="benefit">
-      <h3>🌐 Compartir Link</h3>
-      <p>Copia y envía el enlace de tu tienda a tus amigos y clientes.</p>
-      <button class="btn" onclick="copiarLink()">🔗 Copiar Enlace</button>
-    </div>
-
-    <div class="benefit">
-      <h3>💬 Compartir por WhatsApp</h3>
-      <p>Envía tu tienda rápidamente por WhatsApp.</p>
-      <button class="btn" onclick="window.open('https://wa.me/?text=Visita%20mi%20tienda%20de%20helados%20Guaba%20Ice')">📤 Compartir</button>
-    </div>
-  </div>
-</section>
-
 <footer>
-  <h2>🍦 Guaba Ice</h2>
+  <h2>🍦 Codesweed</h2>
   <p>📍 Tienda Virtual - San Francisco de Borja</p>
-  <p>© 2026 Guaba Ice - Todos los derechos reservados.</p>
+  <p>© 2026 Codesweed - Todos los derechos reservados.</p>
 </footer>
-
-<script>
-function copiarLink(){
-  navigator.clipboard.writeText(window.location.href);
-  alert('🔗 Enlace copiado correctamente');
-}
-</script>
 
 </body>
 </html>
