@@ -265,7 +265,8 @@
   </div>
 
   <div class="card">
-    <img src="imagenes/heladog.png" alt="Helado de Achotillo">
+    <img src="imagenes/<img width="1459" height="800" alt="heladog" src="https://github.com/user-attachments/assets/61183df0-5374-4e2f-8748-da11ddab0b21" />
+.png" alt="Helado de Achotillo">
     <div class="card-content">
       <h3>Helado de Achotillo</h3>
       <div class="precio">$1.00</div>
