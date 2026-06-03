@@ -1,5 +1,5 @@
 
-<!DOCTYPE html>
+
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -255,7 +255,8 @@
 <section class="productos">
 
   <div class="card">
-    <img src="imagenes/images4gu.png" alt="Helado de Guaba">
+    <img src="<img width="1122" height="1402" alt="helado-achotillo png" src="https://github.com/user-attachments/assets/e9675d39-21ad-4dbc-bf38-28a3dc74212e" />
+" alt="Helado de Guaba">
     <div class="card-content">
       <h3>Helado de Guaba</h3>
       <div class="precio">$1.00</div>
